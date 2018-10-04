@@ -106,7 +106,7 @@ So there will be a way for you to say like "This one's not a module. This is my 
 
 **Alex Sexton:** Yeah, I don't think there's a ton of people using this in production quite yet, by the nature of how new it is.
 
-**Mike Taylor:** Yeah, this is like this week, right? \[unintelligible 00:09:47.05\] even serve like an evergreen demo-type thing.
+**Mike Taylor:** Yeah, this is like this week, right? that you even serve like an evergreen demo-type thing.
 
 **Wes Bos:** I'm just looking at a quick little blog post about it here, and for those listening that wanna know a little bit more about it, what this blog post is recommending is that you ship your ES6 modules to the browser, and then you use this "no module" attribute that Mike was talking about to signify to the browser "Hey, when you do not support ES6 modules..." So you should sort of ship two versions of your code base - one compiled and one not - and you can sort of fall back to the compiled version when there's not module support.
 
@@ -122,7 +122,7 @@ So there will be a way for you to say like "This one's not a module. This is my 
 
 **Mike Taylor:** Amazing.
 
-**Alex Sexton:** One interesting thing that I guess I didn't really consider until now - and I may be considering it incorrectly... Whenever they did the modules back in TC39, there are things about modules that are true that they \[unintelligible 00:10:56.25\] and if you're using a module, that must mean you're using new Javascript, which means that they can make different defaults to the language while you're in a module, if that makes sense. So they assume that since you're in a module, you must be in strict mode. I believe that's the case.
+**Alex Sexton:** One interesting thing that I guess I didn't really consider until now - and I may be considering it incorrectly... Whenever they did the modules back in TC39, there are things about modules that are true that they were able to like since modules are new and if you're using a module, that must mean you're using new Javascript, which means that they can make different defaults to the language while you're in a module, if that makes sense. So they assume that since you're in a module, you must be in strict mode. I believe that's the case.
 
 So this would be the first time - since this is the first native implementation of modules anywhere - that that is enforced, versus just...
 
